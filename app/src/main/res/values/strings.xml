@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">kotlinfirst</string>
+
+    <string name="copyrite">Copyrite @jey.co.in 2019</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>
