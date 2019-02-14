@@ -16,7 +16,7 @@ steps:
   inputs:
     apkFiles: '**/*.apk'
     jarsign: true
-    jarsignerKeystoreFile: 'pathToYourKeystoreFile'
+    jarsignerKeystoreFile: 'debug.keystore'
     jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
     jarsignerKeystoreAlias: 'yourKeystoreAlias'
     jarsignerKeyPassword: '$(jarsignerKeyPassword)'
