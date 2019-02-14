@@ -12,12 +12,17 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleDebug'
 
-- task: AndroidSigning@2
+# Android Signing
+# Sign and align Android APK files
+- task: AndroidSigning@3
   inputs:
-    apkFiles: '**/*.apk'
-    jarsign: true
-    jarsignerKeystoreFile: 'debug.keystore'
-    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
-    jarsignerKeystoreAlias: 'yourKeystoreAlias'
-    jarsignerKeyPassword: '$(jarsignerKeyPassword)'
-    zipalign: true
+    apkFiles: '**/*.apk' 
+    apksign: true # Optional
+    apksignerKeystoreFile: 'my.keystore'
+    apksignerKeystorePassword: 'qwerty'
+    apksignerKeystoreAlias: 'my'
+    apksignerKeyPassword: 'qwerty'
+    #apksignerArguments: '--verbose' # Optional
+    #apksignerFile: # Optional
+    #zipalign: true # Optional
+    #zipalignFile: # Optional
